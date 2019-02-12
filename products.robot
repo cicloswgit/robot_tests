@@ -3,6 +3,7 @@ Documentation     A test suite with test scenarios for validate products feature
 Resource          resource.robot
 Resource          login_steps.robot
 Resource          products_steps.robot
+Resource          checkout_steps.robot
 
 *** Test Cases ***
 Operate Cart
@@ -15,4 +16,8 @@ Operate Cart
     Add 3 products on the cart 
     Remove 1 product from the cart
     Shopping Cart Should have 2 products
+
+    Go to checkout page
+    Fill Checkout informations
+    See the total price
 [Teardown] Close Browser
