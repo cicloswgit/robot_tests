@@ -5,6 +5,7 @@ Resource          login_steps.robot
 Resource          products_steps.robot
 Resource          checkout_steps.robot
 Resource          order_steps.robot
+Resource          validation_steps.robot
 
 *** Test Cases ***
 Operate Cart
@@ -23,5 +24,5 @@ Operate Cart
     See the total price
 
     Finish the shop
-    See the message  THANK YOU FOR YOUR ORDER
+    Should see the message  THANK YOU FOR YOUR ORDER
 [Teardown] Close Browser
