@@ -10,3 +10,13 @@ ${BROWSER}        Firefox
 ${DELAY}          0
 ${LOGIN URL}      https://${SERVER}/
 ${WELCOME URL}    https://${SERVER}/inventory.html
+
+*** Keywords ***
+Init Tests
+    Open Browser    ${LOGIN URL}    ${BROWSER}
+    Maximize Browser Window
+    Set Selenium Speed    ${DELAY}
+
+
+Quit Tests
+    Close All Browsers       

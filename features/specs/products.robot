@@ -6,10 +6,11 @@ Resource          ../steps/products_steps.robot
 Resource          ../steps/checkout_steps.robot
 Resource          ../steps/order_steps.robot
 Resource          ../steps/validation_steps.robot
+Suite Setup        Init Tests
+Suite Teardown     Quit Tests
 
 *** Test Cases ***
 Operate Cart
-    Open Browser To Login Page
     Input Username    standard_user
     Input Password    secret_sauce
     Submit Credentials
@@ -25,4 +26,3 @@ Operate Cart
 
     Finish the shop
     Should see the message  THANK YOU FOR YOUR ORDER
-    Close the Browser

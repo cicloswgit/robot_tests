@@ -3,13 +3,7 @@ Login With Valid Credentials
 
 Set Environment Variable  webdriver.gecko.driver  /usr/bin/geckodriver.exe
 
-Open Browser To Login Page
-    Open Browser    ${LOGIN URL}    ${BROWSER}
-    Maximize Browser Window
-    Set Selenium Speed    ${DELAY}
-    Login Page Should Be Open
-
-Login Page Should Be Open
+See Login Page
     Title Should Be    Swag Labs
 
 Go To Login Page
@@ -29,6 +23,4 @@ Submit Credentials
 
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
-
-Close the Browser
-    Close All Browsers     
+  
