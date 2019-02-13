@@ -18,5 +18,5 @@ Init Tests
     Set Selenium Speed                    ${DELAY}
 
 Quit Tests
-    Capture Page Screenshot    ./screenshots/${PREV_TEST_NAME}.png
+    Capture Page Screenshot    ./screenshots/${TEST_NAME}.png
     Close All Browsers       

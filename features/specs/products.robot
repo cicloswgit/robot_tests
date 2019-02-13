@@ -6,11 +6,12 @@ Resource          ../steps/products_steps.robot
 Resource          ../steps/checkout_steps.robot
 Resource          ../steps/order_steps.robot
 Resource          ../steps/validation_steps.robot
-Suite Setup        Init Tests
-Suite Teardown     Quit Tests
+Test Setup        Init Tests
+Test Teardown     Quit Tests
 
 *** Test Cases ***
 Operate Cart
+    See Login Page
     Input Username    standard_user
     Input Password    secret_sauce
     Submit Credentials
