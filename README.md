@@ -21,24 +21,47 @@ source venv/bin/activate
 ```
 http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#demonstrations
 
-pip install docutils
+pip3 install docutils
+
 ```
 
 Download Selenium Drivers
 ```
 Firefox - https://github.com/mozilla/geckodriver/releases/tag/v0.24.0
-Chrome - https://chromedriver.storage.googleapis.com/index.html?path=73.0.3683.20/
 ```
 
-## or
 
-### Clone the project and run Dockerfile
 
+_________________
+
+
+
+## or Clone the project 
+
+### and run requirements
+```
+python3 -m pip requirements.txt
+```
+
+### and run Dockerfile
+```
+python3 -m pip requirements.txt
+```
+
+
+_________________
 
 ## Running Tests
+```
+robot /features/specs/
+```
+
+### Seeing the Results on
+```
+screenshots folder
+report.html, output.xml or log.html archives
+```
 
 
 
-
-### Seeing the Results
 

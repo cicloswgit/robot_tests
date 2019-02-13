@@ -6,7 +6,7 @@ Library           OperatingSystem
 
 *** Variables ***
 ${SERVER}         www.saucedemo.com
-${BROWSER}        Firefox
+${BROWSER}        HeadlessFirefox
 ${DELAY}          0
 ${LOGIN URL}      https://${SERVER}/
 ${WELCOME URL}    https://${SERVER}/inventory.html
