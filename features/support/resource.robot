@@ -10,4 +10,3 @@ ${BROWSER}        Firefox
 ${DELAY}          0
 ${LOGIN URL}      https://${SERVER}/
 ${WELCOME URL}    https://${SERVER}/inventory.html
-${ERROR URL}      https://${SERVER}/error.html

@@ -1,11 +1,11 @@
 *** Settings ***
 Documentation     A test suite with test scenarios for validate products feature.
-Resource          resource.robot
-Resource          login_steps.robot
-Resource          products_steps.robot
-Resource          checkout_steps.robot
-Resource          order_steps.robot
-Resource          validation_steps.robot
+Resource          ../support/resource.robot
+Resource          ../steps/login_steps.robot
+Resource          ../steps/products_steps.robot
+Resource          ../steps/checkout_steps.robot
+Resource          ../steps/order_steps.robot
+Resource          ../steps/validation_steps.robot
 
 *** Test Cases ***
 Operate Cart

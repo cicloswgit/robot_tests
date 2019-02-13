@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     A test suite with test scenarios for validate login feature.
-Resource          resource.robot
-Resource          login_steps.robot
+Resource          ../support/resource.robot
+Resource          ../steps/login_steps.robot
 
 *** Test Cases ***
 Valid Login
