@@ -11,6 +11,7 @@ Test Teardown     Quit Tests
 
 *** Test Cases ***
 Operate Cart
+    [Tags]   login
     See Login Page
     Input Username    standard_user
     Input Password    secret_sauce

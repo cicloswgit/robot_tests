@@ -13,19 +13,24 @@ RUN pip install --no-cache-dir \
   selenium==3.141.0\
   docutils
 
-RUN wget https://ftp.mozilla.org/pub/firefox/releases/65.0/linux-x86_64/en-US/firefox-65.0.tar.bz2
-RUN tar xjf firefox-65.0.tar.bz2  -C /opt/
-RUN mv /usr/lib/firefox/firefox /usr/lib/firefox/firefox_backup
-RUN ln -s /opt/firefox/firefox /usr/bin/firefox/firefox
-
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
 RUN tar -xvzf geckodriver-v0.24.0-linux64.tar.gz
 RUN rm geckodriver-v0.24.0-linux64.tar.gz
 RUN chmod +x geckodriver
 RUN cp geckodriver /usr/local/bin/
 
+
+COPY entry_point.sh /opt/bin/entry_point.sh
+ENV SCREEN_WIDTH 1280
+ENV SCREEN_HEIGHT 720
+ENV SCREEN_DEPTH 16
+
 RUN mkdir /robot_tests
 WORKDIR /robot_tests
 
 COPY . .
+RUN chmod +x entry_point.sh
+ENTRYPOINT [ "entry_point.sh" ]
+
+
 RUN robot features/specs
