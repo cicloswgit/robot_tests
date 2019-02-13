@@ -11,4 +11,4 @@ Invalid Login
     Input Password    secret_sauce
     Submit Credentials
     Should see the message   Username and password do not match any user in this service
-[Teardown] Close Browser
+    Close the Browser

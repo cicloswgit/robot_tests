@@ -25,4 +25,4 @@ Operate Cart
 
     Finish the shop
     Should see the message  THANK YOU FOR YOUR ORDER
-[Teardown] Close Browser
+    Close the Browser

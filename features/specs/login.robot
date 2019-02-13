@@ -10,4 +10,4 @@ Valid Login
     Input Password    secret_sauce
     Submit Credentials
     Welcome Page Should Be Open
-[Teardown] Close Browser
+    Close the Browser

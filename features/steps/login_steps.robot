@@ -18,15 +18,17 @@ Go To Login Page
 
 Input Username
     [Arguments]    ${username}
-    Input Text    user-name    ${username}
+    Input Text     user-name    ${username}
 
 Input Password
     [Arguments]    ${password}
-    Input Text    password    ${password}
+    Input Text     password    ${password}
 
 Submit Credentials
     Click Button    class:login-button
 
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
-Title Should Be Welcome Page
+
+Close the Browser
+    Close All Browsers     
