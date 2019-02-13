@@ -4,6 +4,7 @@ Resource          resource.robot
 Resource          login_steps.robot
 Resource          products_steps.robot
 Resource          checkout_steps.robot
+Resource          order_steps.robot
 
 *** Test Cases ***
 Operate Cart
@@ -20,4 +21,7 @@ Operate Cart
     Go to checkout page
     Fill Checkout informations
     See the total price
+
+    Finish the shop
+    See the message  THANK YOU FOR YOUR ORDER
 [Teardown] Close Browser
