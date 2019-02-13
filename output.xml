@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.6.7 on linux)" generated="20190213 00:36:41.825" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.6.7 on linux)" generated="20190213 01:12:08.774" rpa="false">
 <suite id="s1" name="Specs" source="/home/joao/DEV/python/robot_tests/features/specs">
 <suite id="s1-s1" name="Invalid Login" source="/home/joao/DEV/python/robot_tests/features/specs/invalid_login.robot">
 <kw name="Init Tests" library="resource" type="setup">
@@ -9,21 +9,21 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:41.948" level="INFO">Opening browser 'Firefox' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20190213 00:36:41.948" endtime="20190213 00:36:48.707"></status>
+<msg timestamp="20190213 01:12:08.895" level="INFO">Opening browser 'Firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20190213 01:12:08.895" endtime="20190213 01:12:15.788"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190213 00:36:48.707" endtime="20190213 00:36:48.998"></status>
+<status status="PASS" starttime="20190213 01:12:15.788" endtime="20190213 01:12:16.087"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20190213 00:36:48.998" endtime="20190213 00:36:49.001"></status>
+<status status="PASS" starttime="20190213 01:12:16.088" endtime="20190213 01:12:16.089"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:41.947" endtime="20190213 00:36:49.002"></status>
+<status status="PASS" starttime="20190213 01:12:08.894" endtime="20190213 01:12:16.090"></status>
 </kw>
 <test id="s1-s1-t1" name="Invalid Login">
 <kw name="Input Username" library="login_steps">
@@ -36,10 +36,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:49.006" level="INFO">Typing text 'invalid_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20190213 00:36:49.006" endtime="20190213 00:36:49.075"></status>
+<msg timestamp="20190213 01:12:16.096" level="INFO">Typing text 'invalid_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20190213 01:12:16.095" endtime="20190213 01:12:16.210"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:49.005" endtime="20190213 00:36:49.075"></status>
+<status status="PASS" starttime="20190213 01:12:16.093" endtime="20190213 01:12:16.210"></status>
 </kw>
 <kw name="Input Password" library="login_steps">
 <arguments>
@@ -51,10 +51,10 @@
 <arg>password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:49.076" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
-<status status="PASS" starttime="20190213 00:36:49.075" endtime="20190213 00:36:49.120"></status>
+<msg timestamp="20190213 01:12:16.211" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20190213 01:12:16.211" endtime="20190213 01:12:16.254"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:49.075" endtime="20190213 00:36:49.120"></status>
+<status status="PASS" starttime="20190213 01:12:16.210" endtime="20190213 01:12:16.254"></status>
 </kw>
 <kw name="Submit Credentials" library="login_steps">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -62,10 +62,10 @@
 <arguments>
 <arg>class:login-button</arg>
 </arguments>
-<msg timestamp="20190213 00:36:49.121" level="INFO">Clicking button 'class:login-button'.</msg>
-<status status="PASS" starttime="20190213 00:36:49.121" endtime="20190213 00:36:49.361"></status>
+<msg timestamp="20190213 01:12:16.255" level="INFO">Clicking button 'class:login-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:16.255" endtime="20190213 01:12:16.496"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:49.121" endtime="20190213 00:36:49.362"></status>
+<status status="PASS" starttime="20190213 01:12:16.254" endtime="20190213 01:12:16.496"></status>
 </kw>
 <kw name="Should see the message" library="validation_steps">
 <arguments>
@@ -76,22 +76,30 @@
 <arguments>
 <arg>${message}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:49.402" level="INFO">Current page contains text 'Username and password do not match any user in this service'.</msg>
-<status status="PASS" starttime="20190213 00:36:49.364" endtime="20190213 00:36:49.402"></status>
+<msg timestamp="20190213 01:12:16.539" level="INFO">Current page contains text 'Username and password do not match any user in this service'.</msg>
+<status status="PASS" starttime="20190213 01:12:16.498" endtime="20190213 01:12:16.539"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:49.363" endtime="20190213 00:36:49.403"></status>
+<status status="PASS" starttime="20190213 01:12:16.497" endtime="20190213 01:12:16.539"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:49.002" endtime="20190213 00:36:49.403" critical="yes"></status>
+<status status="PASS" starttime="20190213 01:12:16.090" endtime="20190213 01:12:16.540" critical="yes"></status>
 </test>
 <kw name="Quit Tests" library="resource" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>./screenshots/${PREV_TEST_NAME}.png</arg>
+</arguments>
+<msg timestamp="20190213 01:12:16.688" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/Invalid%20Login.png"&gt;&lt;img src="screenshots/Invalid%20Login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190213 01:12:16.542" endtime="20190213 01:12:16.688"></status>
+</kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190213 00:36:49.406" endtime="20190213 00:36:50.322"></status>
+<status status="PASS" starttime="20190213 01:12:16.689" endtime="20190213 01:12:17.714"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:49.405" endtime="20190213 00:36:50.323"></status>
+<status status="PASS" starttime="20190213 01:12:16.541" endtime="20190213 01:12:17.714"></status>
 </kw>
 <doc>A test suite with test scenarios for validate login feature.</doc>
-<status status="PASS" starttime="20190213 00:36:41.845" endtime="20190213 00:36:50.323"></status>
+<status status="PASS" starttime="20190213 01:12:08.794" endtime="20190213 01:12:17.714"></status>
 </suite>
 <suite id="s1-s2" name="Login" source="/home/joao/DEV/python/robot_tests/features/specs/login.robot">
 <kw name="Init Tests" library="resource" type="setup">
@@ -101,21 +109,21 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:50.341" level="INFO">Opening browser 'Firefox' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20190213 00:36:50.340" endtime="20190213 00:36:57.190"></status>
+<msg timestamp="20190213 01:12:17.726" level="INFO">Opening browser 'Firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20190213 01:12:17.725" endtime="20190213 01:12:24.397"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190213 00:36:57.190" endtime="20190213 00:36:57.491"></status>
+<status status="PASS" starttime="20190213 01:12:24.397" endtime="20190213 01:12:24.687"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20190213 00:36:57.492" endtime="20190213 00:36:57.494"></status>
+<status status="PASS" starttime="20190213 01:12:24.688" endtime="20190213 01:12:24.690"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:50.339" endtime="20190213 00:36:57.494"></status>
+<status status="PASS" starttime="20190213 01:12:17.725" endtime="20190213 01:12:24.690"></status>
 </kw>
 <test id="s1-s2-t1" name="Valid Login">
 <kw name="See Login Page" library="login_steps">
@@ -124,10 +132,10 @@
 <arguments>
 <arg>Swag Labs</arg>
 </arguments>
-<msg timestamp="20190213 00:36:57.518" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20190213 00:36:57.499" endtime="20190213 00:36:57.519"></status>
+<msg timestamp="20190213 01:12:24.702" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20190213 01:12:24.694" endtime="20190213 01:12:24.702"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:57.498" endtime="20190213 00:36:57.519"></status>
+<status status="PASS" starttime="20190213 01:12:24.694" endtime="20190213 01:12:24.702"></status>
 </kw>
 <kw name="Input Username" library="login_steps">
 <arguments>
@@ -139,10 +147,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:57.524" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20190213 00:36:57.523" endtime="20190213 00:36:57.647"></status>
+<msg timestamp="20190213 01:12:24.703" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20190213 01:12:24.703" endtime="20190213 01:12:24.758"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:57.520" endtime="20190213 00:36:57.647"></status>
+<status status="PASS" starttime="20190213 01:12:24.702" endtime="20190213 01:12:24.758"></status>
 </kw>
 <kw name="Input Password" library="login_steps">
 <arguments>
@@ -154,10 +162,10 @@
 <arg>password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:57.648" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
-<status status="PASS" starttime="20190213 00:36:57.648" endtime="20190213 00:36:57.690"></status>
+<msg timestamp="20190213 01:12:24.759" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20190213 01:12:24.759" endtime="20190213 01:12:24.804"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:57.647" endtime="20190213 00:36:57.690"></status>
+<status status="PASS" starttime="20190213 01:12:24.758" endtime="20190213 01:12:24.804"></status>
 </kw>
 <kw name="Submit Credentials" library="login_steps">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -165,10 +173,10 @@
 <arguments>
 <arg>class:login-button</arg>
 </arguments>
-<msg timestamp="20190213 00:36:57.691" level="INFO">Clicking button 'class:login-button'.</msg>
-<status status="PASS" starttime="20190213 00:36:57.691" endtime="20190213 00:36:59.483"></status>
+<msg timestamp="20190213 01:12:24.805" level="INFO">Clicking button 'class:login-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:24.804" endtime="20190213 01:12:26.685"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:57.691" endtime="20190213 00:36:59.483"></status>
+<status status="PASS" starttime="20190213 01:12:24.804" endtime="20190213 01:12:26.685"></status>
 </kw>
 <kw name="Welcome Page Should Be Open" library="login_steps">
 <kw name="Location Should Be" library="SeleniumLibrary">
@@ -176,22 +184,30 @@
 <arguments>
 <arg>${WELCOME URL}</arg>
 </arguments>
-<msg timestamp="20190213 00:36:59.489" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
-<status status="PASS" starttime="20190213 00:36:59.484" endtime="20190213 00:36:59.490"></status>
+<msg timestamp="20190213 01:12:26.689" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<status status="PASS" starttime="20190213 01:12:26.686" endtime="20190213 01:12:26.689"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:59.484" endtime="20190213 00:36:59.490"></status>
+<status status="PASS" starttime="20190213 01:12:26.686" endtime="20190213 01:12:26.689"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:57.495" endtime="20190213 00:36:59.490" critical="yes"></status>
+<status status="PASS" starttime="20190213 01:12:24.691" endtime="20190213 01:12:26.689" critical="yes"></status>
 </test>
 <kw name="Quit Tests" library="resource" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>./screenshots/${PREV_TEST_NAME}.png</arg>
+</arguments>
+<msg timestamp="20190213 01:12:26.943" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/Valid%20Login.png"&gt;&lt;img src="screenshots/Valid%20Login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190213 01:12:26.690" endtime="20190213 01:12:26.943"></status>
+</kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190213 00:36:59.492" endtime="20190213 00:37:00.623"></status>
+<status status="PASS" starttime="20190213 01:12:26.943" endtime="20190213 01:12:28.055"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:36:59.491" endtime="20190213 00:37:00.623"></status>
+<status status="PASS" starttime="20190213 01:12:26.690" endtime="20190213 01:12:28.056"></status>
 </kw>
 <doc>A test suite with test scenarios for validate login feature.</doc>
-<status status="PASS" starttime="20190213 00:36:50.326" endtime="20190213 00:37:00.623"></status>
+<status status="PASS" starttime="20190213 01:12:17.716" endtime="20190213 01:12:28.056"></status>
 </suite>
 <suite id="s1-s3" name="Products" source="/home/joao/DEV/python/robot_tests/features/specs/products.robot">
 <kw name="Init Tests" library="resource" type="setup">
@@ -201,21 +217,21 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190213 00:37:00.648" level="INFO">Opening browser 'Firefox' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20190213 00:37:00.648" endtime="20190213 00:37:07.340"></status>
+<msg timestamp="20190213 01:12:28.082" level="INFO">Opening browser 'Firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20190213 01:12:28.082" endtime="20190213 01:12:35.759"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190213 00:37:07.340" endtime="20190213 00:37:07.623"></status>
+<status status="PASS" starttime="20190213 01:12:35.759" endtime="20190213 01:12:36.044"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20190213 00:37:07.624" endtime="20190213 00:37:07.626"></status>
+<status status="PASS" starttime="20190213 01:12:36.045" endtime="20190213 01:12:36.046"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:00.648" endtime="20190213 00:37:07.627"></status>
+<status status="PASS" starttime="20190213 01:12:28.082" endtime="20190213 01:12:36.047"></status>
 </kw>
 <test id="s1-s3-t1" name="Operate Cart">
 <kw name="Input Username" library="login_steps">
@@ -228,10 +244,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190213 00:37:07.634" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20190213 00:37:07.633" endtime="20190213 00:37:07.708"></status>
+<msg timestamp="20190213 01:12:36.053" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20190213 01:12:36.052" endtime="20190213 01:12:36.122"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:07.631" endtime="20190213 00:37:07.708"></status>
+<status status="PASS" starttime="20190213 01:12:36.050" endtime="20190213 01:12:36.122"></status>
 </kw>
 <kw name="Input Password" library="login_steps">
 <arguments>
@@ -243,10 +259,10 @@
 <arg>password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190213 00:37:07.709" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
-<status status="PASS" starttime="20190213 00:37:07.708" endtime="20190213 00:37:07.755"></status>
+<msg timestamp="20190213 01:12:36.123" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20190213 01:12:36.122" endtime="20190213 01:12:36.167"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:07.708" endtime="20190213 00:37:07.755"></status>
+<status status="PASS" starttime="20190213 01:12:36.122" endtime="20190213 01:12:36.167"></status>
 </kw>
 <kw name="Submit Credentials" library="login_steps">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -254,10 +270,10 @@
 <arguments>
 <arg>class:login-button</arg>
 </arguments>
-<msg timestamp="20190213 00:37:07.757" level="INFO">Clicking button 'class:login-button'.</msg>
-<status status="PASS" starttime="20190213 00:37:07.756" endtime="20190213 00:37:09.733"></status>
+<msg timestamp="20190213 01:12:36.168" level="INFO">Clicking button 'class:login-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:36.168" endtime="20190213 01:12:38.258"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:07.756" endtime="20190213 00:37:09.733"></status>
+<status status="PASS" starttime="20190213 01:12:36.168" endtime="20190213 01:12:38.258"></status>
 </kw>
 <kw name="Welcome Page Should Be Open" library="login_steps">
 <kw name="Location Should Be" library="SeleniumLibrary">
@@ -265,10 +281,10 @@
 <arguments>
 <arg>${WELCOME URL}</arg>
 </arguments>
-<msg timestamp="20190213 00:37:09.739" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
-<status status="PASS" starttime="20190213 00:37:09.734" endtime="20190213 00:37:09.739"></status>
+<msg timestamp="20190213 01:12:38.261" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<status status="PASS" starttime="20190213 01:12:38.259" endtime="20190213 01:12:38.261"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:09.733" endtime="20190213 00:37:09.740"></status>
+<status status="PASS" starttime="20190213 01:12:38.258" endtime="20190213 01:12:38.261"></status>
 </kw>
 <kw name="Add 3 products on the cart" library="products_steps">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -276,26 +292,26 @@
 <arguments>
 <arg>class:add-to-cart-button</arg>
 </arguments>
-<msg timestamp="20190213 00:37:09.742" level="INFO">Clicking element 'class:add-to-cart-button'.</msg>
-<status status="PASS" starttime="20190213 00:37:09.741" endtime="20190213 00:37:10.010"></status>
+<msg timestamp="20190213 01:12:38.262" level="INFO">Clicking element 'class:add-to-cart-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:38.261" endtime="20190213 01:12:38.494"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>class:add-to-cart-button</arg>
 </arguments>
-<msg timestamp="20190213 00:37:10.011" level="INFO">Clicking element 'class:add-to-cart-button'.</msg>
-<status status="PASS" starttime="20190213 00:37:10.010" endtime="20190213 00:37:10.286"></status>
+<msg timestamp="20190213 01:12:38.495" level="INFO">Clicking element 'class:add-to-cart-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:38.495" endtime="20190213 01:12:38.775"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>class:add-to-cart-button</arg>
 </arguments>
-<msg timestamp="20190213 00:37:10.288" level="INFO">Clicking element 'class:add-to-cart-button'.</msg>
-<status status="PASS" starttime="20190213 00:37:10.287" endtime="20190213 00:37:10.549"></status>
+<msg timestamp="20190213 01:12:38.776" level="INFO">Clicking element 'class:add-to-cart-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:38.775" endtime="20190213 01:12:39.016"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:09.740" endtime="20190213 00:37:10.550"></status>
+<status status="PASS" starttime="20190213 01:12:38.261" endtime="20190213 01:12:39.016"></status>
 </kw>
 <kw name="Remove 1 product from the cart" library="products_steps">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -303,10 +319,10 @@
 <arguments>
 <arg>class:remove-from-cart-button</arg>
 </arguments>
-<msg timestamp="20190213 00:37:10.553" level="INFO">Clicking element 'class:remove-from-cart-button'.</msg>
-<status status="PASS" starttime="20190213 00:37:10.552" endtime="20190213 00:37:10.813"></status>
+<msg timestamp="20190213 01:12:39.019" level="INFO">Clicking element 'class:remove-from-cart-button'.</msg>
+<status status="PASS" starttime="20190213 01:12:39.018" endtime="20190213 01:12:39.265"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:10.551" endtime="20190213 00:37:10.814"></status>
+<status status="PASS" starttime="20190213 01:12:39.017" endtime="20190213 01:12:39.266"></status>
 </kw>
 <kw name="Shopping Cart Should have 2 products" library="products_steps">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
@@ -315,10 +331,10 @@
 <arg>class:shopping_cart_badge</arg>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20190213 00:37:10.817" level="INFO">Verifying element 'class:shopping_cart_badge' contains exact text '2'.</msg>
-<status status="PASS" starttime="20190213 00:37:10.816" endtime="20190213 00:37:10.866"></status>
+<msg timestamp="20190213 01:12:39.271" level="INFO">Verifying element 'class:shopping_cart_badge' contains exact text '2'.</msg>
+<status status="PASS" starttime="20190213 01:12:39.270" endtime="20190213 01:12:39.358"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:10.815" endtime="20190213 00:37:10.866"></status>
+<status status="PASS" starttime="20190213 01:12:39.268" endtime="20190213 01:12:39.358"></status>
 </kw>
 <kw name="Go to checkout page" library="checkout_steps">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -326,18 +342,18 @@
 <arguments>
 <arg>class:shopping_cart_link</arg>
 </arguments>
-<msg timestamp="20190213 00:37:10.867" level="INFO">Clicking link 'class:shopping_cart_link'.</msg>
-<status status="PASS" starttime="20190213 00:37:10.867" endtime="20190213 00:37:11.241"></status>
+<msg timestamp="20190213 01:12:39.359" level="INFO">Clicking link 'class:shopping_cart_link'.</msg>
+<status status="PASS" starttime="20190213 01:12:39.359" endtime="20190213 01:12:39.821"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>class:cart_checkout_link</arg>
 </arguments>
-<msg timestamp="20190213 00:37:11.242" level="INFO">Clicking link 'class:cart_checkout_link'.</msg>
-<status status="PASS" starttime="20190213 00:37:11.242" endtime="20190213 00:37:11.640"></status>
+<msg timestamp="20190213 01:12:39.822" level="INFO">Clicking link 'class:cart_checkout_link'.</msg>
+<status status="PASS" starttime="20190213 01:12:39.821" endtime="20190213 01:12:40.340"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:10.866" endtime="20190213 00:37:11.641"></status>
+<status status="PASS" starttime="20190213 01:12:39.358" endtime="20190213 01:12:40.340"></status>
 </kw>
 <kw name="Fill Checkout informations" library="checkout_steps">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -346,8 +362,8 @@
 <arg>class:checkout-input[placeholder="First Name"]</arg>
 <arg>Teste</arg>
 </arguments>
-<msg timestamp="20190213 00:37:11.643" level="INFO">Typing text 'Teste' into text field 'class:checkout-input[placeholder="First Name"]'.</msg>
-<status status="PASS" starttime="20190213 00:37:11.643" endtime="20190213 00:37:11.688"></status>
+<msg timestamp="20190213 01:12:40.341" level="INFO">Typing text 'Teste' into text field 'class:checkout-input[placeholder="First Name"]'.</msg>
+<status status="PASS" starttime="20190213 01:12:40.341" endtime="20190213 01:12:40.402"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -355,8 +371,8 @@
 <arg>class:checkout-input[placeholder="Last Name"]</arg>
 <arg>Lorena</arg>
 </arguments>
-<msg timestamp="20190213 00:37:11.689" level="INFO">Typing text 'Lorena' into text field 'class:checkout-input[placeholder="Last Name"]'.</msg>
-<status status="PASS" starttime="20190213 00:37:11.689" endtime="20190213 00:37:11.719"></status>
+<msg timestamp="20190213 01:12:40.403" level="INFO">Typing text 'Lorena' into text field 'class:checkout-input[placeholder="Last Name"]'.</msg>
+<status status="PASS" starttime="20190213 01:12:40.402" endtime="20190213 01:12:40.445"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -364,18 +380,18 @@
 <arg>class:checkout-input[placeholder="Zip/Postal Code"]</arg>
 <arg>40000</arg>
 </arguments>
-<msg timestamp="20190213 00:37:11.720" level="INFO">Typing text '40000' into text field 'class:checkout-input[placeholder="Zip/Postal Code"]'.</msg>
-<status status="PASS" starttime="20190213 00:37:11.720" endtime="20190213 00:37:11.743"></status>
+<msg timestamp="20190213 01:12:40.446" level="INFO">Typing text '40000' into text field 'class:checkout-input[placeholder="Zip/Postal Code"]'.</msg>
+<status status="PASS" starttime="20190213 01:12:40.445" endtime="20190213 01:12:40.472"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>class:cart_checkout_link</arg>
 </arguments>
-<msg timestamp="20190213 00:37:11.744" level="INFO">Clicking element 'class:cart_checkout_link'.</msg>
-<status status="PASS" starttime="20190213 00:37:11.743" endtime="20190213 00:37:12.237"></status>
+<msg timestamp="20190213 01:12:40.472" level="INFO">Clicking element 'class:cart_checkout_link'.</msg>
+<status status="PASS" starttime="20190213 01:12:40.472" endtime="20190213 01:12:40.957"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:11.642" endtime="20190213 00:37:12.238"></status>
+<status status="PASS" starttime="20190213 01:12:40.340" endtime="20190213 01:12:40.957"></status>
 </kw>
 <kw name="See the total price" library="checkout_steps">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
@@ -384,10 +400,10 @@
 <arg>class:summary_total_label</arg>
 <arg>Total: $28.06</arg>
 </arguments>
-<msg timestamp="20190213 00:37:12.239" level="INFO">Verifying element 'class:summary_total_label' contains exact text 'Total: $28.06'.</msg>
-<status status="PASS" starttime="20190213 00:37:12.238" endtime="20190213 00:37:12.257"></status>
+<msg timestamp="20190213 01:12:40.958" level="INFO">Verifying element 'class:summary_total_label' contains exact text 'Total: $28.06'.</msg>
+<status status="PASS" starttime="20190213 01:12:40.958" endtime="20190213 01:12:40.970"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:12.238" endtime="20190213 00:37:12.257"></status>
+<status status="PASS" starttime="20190213 01:12:40.958" endtime="20190213 01:12:40.970"></status>
 </kw>
 <kw name="Finish the Shop" library="order_steps">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -395,10 +411,10 @@
 <arguments>
 <arg>class:cart_checkout_link</arg>
 </arguments>
-<msg timestamp="20190213 00:37:12.259" level="INFO">Clicking link 'class:cart_checkout_link'.</msg>
-<status status="PASS" starttime="20190213 00:37:12.259" endtime="20190213 00:37:13.995"></status>
+<msg timestamp="20190213 01:12:40.971" level="INFO">Clicking link 'class:cart_checkout_link'.</msg>
+<status status="PASS" starttime="20190213 01:12:40.971" endtime="20190213 01:12:43.593"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:12.258" endtime="20190213 00:37:13.996"></status>
+<status status="PASS" starttime="20190213 01:12:40.971" endtime="20190213 01:12:43.593"></status>
 </kw>
 <kw name="Should see the message" library="validation_steps">
 <arguments>
@@ -409,24 +425,32 @@
 <arguments>
 <arg>${message}</arg>
 </arguments>
-<msg timestamp="20190213 00:37:14.051" level="INFO">Current page contains text 'THANK YOU FOR YOUR ORDER'.</msg>
-<status status="PASS" starttime="20190213 00:37:13.998" endtime="20190213 00:37:14.051"></status>
+<msg timestamp="20190213 01:12:43.617" level="INFO">Current page contains text 'THANK YOU FOR YOUR ORDER'.</msg>
+<status status="PASS" starttime="20190213 01:12:43.594" endtime="20190213 01:12:43.617"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:13.997" endtime="20190213 00:37:14.051"></status>
+<status status="PASS" starttime="20190213 01:12:43.594" endtime="20190213 01:12:43.618"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:07.628" endtime="20190213 00:37:14.051" critical="yes"></status>
+<status status="PASS" starttime="20190213 01:12:36.047" endtime="20190213 01:12:43.618" critical="yes"></status>
 </test>
 <kw name="Quit Tests" library="resource" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>./screenshots/${PREV_TEST_NAME}.png</arg>
+</arguments>
+<msg timestamp="20190213 01:12:43.757" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/Operate%20Cart.png"&gt;&lt;img src="screenshots/Operate%20Cart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190213 01:12:43.619" endtime="20190213 01:12:43.757"></status>
+</kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190213 00:37:14.052" endtime="20190213 00:37:14.953"></status>
+<status status="PASS" starttime="20190213 01:12:43.757" endtime="20190213 01:12:44.653"></status>
 </kw>
-<status status="PASS" starttime="20190213 00:37:14.052" endtime="20190213 00:37:14.953"></status>
+<status status="PASS" starttime="20190213 01:12:43.618" endtime="20190213 01:12:44.653"></status>
 </kw>
 <doc>A test suite with test scenarios for validate products feature.</doc>
-<status status="PASS" starttime="20190213 00:37:00.628" endtime="20190213 00:37:14.953"></status>
+<status status="PASS" starttime="20190213 01:12:28.063" endtime="20190213 01:12:44.653"></status>
 </suite>
-<status status="PASS" starttime="20190213 00:36:41.826" endtime="20190213 00:37:14.959"></status>
+<status status="PASS" starttime="20190213 01:12:08.775" endtime="20190213 01:12:44.657"></status>
 </suite>
 <statistics>
 <total>

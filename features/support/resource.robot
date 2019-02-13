@@ -13,10 +13,10 @@ ${WELCOME URL}    https://${SERVER}/inventory.html
 
 *** Keywords ***
 Init Tests
-    Open Browser    ${LOGIN URL}    ${BROWSER}
+    Open Browser                          ${LOGIN URL}    ${BROWSER}
     Maximize Browser Window
-    Set Selenium Speed    ${DELAY}
-
+    Set Selenium Speed                    ${DELAY}
 
 Quit Tests
+    Capture Page Screenshot    ./screenshots/${PREV_TEST_NAME}.png
     Close All Browsers       
