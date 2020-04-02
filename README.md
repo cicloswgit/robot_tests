@@ -23,6 +23,7 @@ _________________
 Install python3 and pip
 ```
 sudo apt install python3 && python3-dev
+pip3 install --upgrade setuptools
 ```
 
 Create Python Environment
